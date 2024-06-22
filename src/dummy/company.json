@@ -1,0 +1,53 @@
+{
+  "aboutUs": {
+    "title": "About Us",
+    "description": "GAMSKYCorp is a leading provider of home moving services, dedicated to ensuring a seamless and stress-free relocation experience for our clients.",
+    "image": "/images/about_us.jpg"
+  },
+  "ourServices": {
+    "title": "Our Services",
+    "services": [
+      {
+        "id": 1,
+        "name": "Economic Package",
+        "description": "Ideal for small homes or apartments. Basic packing and transportation services.",
+        "image": "/images/economic_package.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Standard Package",
+        "description": "Suitable for medium-sized homes. Complete packing and relocation services.",
+        "image": "/images/standard_package.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Premium Package",
+        "description": "Designed for large or luxurious homes. Includes premium packing materials and customized relocation services.",
+        "image": "/images/premium_package.jpg"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Why Choose GAMSKYCorp",
+    "reasons": [
+      {
+        "id": 1,
+        "title": "Experience",
+        "description": "With over 10 years of experience, we have perfected the art of home moving.",
+        "image": "/images/experience.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Customer Satisfaction",
+        "description": "Our top priority is customer satisfaction, ensuring every move is smooth and stress-free.",
+        "image": "/images/customer_satisfaction.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Professional Team",
+        "description": "Our professional team is trained to handle your belongings with care and efficiency.",
+        "image": "/images/professional_team.jpg"
+      }
+    ]
+  }
+}

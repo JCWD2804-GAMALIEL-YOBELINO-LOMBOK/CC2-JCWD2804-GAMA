@@ -1,25 +1,35 @@
 import Link from "next/link";
 import Image from "next/image";
 import Home from "@/components/image/home.jpg";
-import Service from "@/components/image/service.png";
+import Service1 from "@/components/image/servicehemat.png";
+import Service3 from "@/components/image/servicePremium.jpg";
+import Service2 from "@/components/image/servicestandar.jpg";
 import Client from "@/components/image/client.jpg";
+import TeamWork from "@/components/image/teamwork.jpg";
+import OpenTalk from "@/components/image/opentalk2.jpg";
+import Safety from "@/components/image/safety.jpg";
+import Train from "@/components/image/traigrowt.jpg";
+import WlifeB from "@/components/image/worklifebalance.jpg";
+import Testimonials from "@/dummy/testy.json";
 
 const HomePage = () => {
   return (
     // Header
     <main className="bg-blue-200 text-black">
-      <section>
-        <div className="flex justify-center items-center py-32 px-20">
-          <div className="flex-col flex justify-center items-center pr-20 italic">
-            <h1 className="text-3xl font-bold text-center">
+      <section className="py-10 px-10">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 py-10 md:px-8">
+          <div className="md:pr-8 mb-4 md:mb-0 md:w-1/2 text-center md:text-left">
+            <h1 className="text-3xl md:text-4xl font-bold text-center">
               Moving Home With Our Teams
             </h1>
-            <p>"Moving made easy, one box at a time!"</p>
+            <p className="text-center italic">
+              &quot;Moving made easy, one box at a time!&quot;
+            </p>
           </div>
           <Image
             src={Home}
             alt="Pindah Rumah"
-            className="rounded-md shadow-2xl shadwor-black"
+            className="rounded-md shadow-2xl shadwor-black md:w-1/2"
           />
         </div>
       </section>
@@ -46,63 +56,90 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-blue-200 text-black py-10 text-center ">
-        <div className="text-center px-10">
-          <h1 className="font-bold text-3xl">Company Overview</h1>
-          <div className="py-5">
-            <p>
-              Founded in 1999, GAMSKY<sup>Corp</sup> has emerged as a pioneering
-              force in tech and logistics. With a rich history rooted in
-              innovation and a relentless commitment to excellence, we have
-              solidified our position as a leader in tech and logistics
-              worldwide.
-            </p>
+      <section className="bg-blue-200 text- p-10">
+        <h1 className="font-bold text-3xl text-center">Company Culture</h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10">
+          <div className="flex flex-col items-center">
+            <div className="mb-4">
+              <Image
+                src={TeamWork}
+                alt="Culture"
+                width={450}
+                height={550}
+                className="rounded-full"
+              />
+            </div>
+            <div className="text-center mb-10">
+              <h2 className="font-bold">Teamwork:</h2>
+              <p className="text-sm">
+                We work together like a family to get things done.
+              </p>
+            </div>
           </div>
-          <h1 className="font-bold text-3xl">Company History</h1>
-          <div className="py-5">
-            <p>
-              GAMSKY<sup>Corp</sup> was established with a clear vision to
-              making easy to move house. Since our inception, we have embarked
-              on a journey marked by milestones and achievements. From humble
-              beginnings to becoming a formidable player in the market, our
-              history reflects our unwavering dedication to pushing boundaries
-              and exceeding expectations.
-            </p>
+          <div className="flex flex-col items-center">
+            <div className="mb-4">
+              <Image
+                src={Train}
+                alt="Culture"
+                width={450}
+                height={550}
+                className="rounded-full"
+              />
+            </div>
+            <div className="text-center mb-10">
+              <h2 className="font-bold">Training and Growth:</h2>
+              <p> We learn new things to do our job better.</p>
+            </div>
           </div>
-          <h1 className="font-bold text-3xl">Company Team</h1>
-          <div className="py-5">
-            <p>
-              At the heart of GAMSKY<sup>Corp</sup> is a dynamic team of
-              professionals who embody our core values and drive our success.
-              Our team comprises individuals from diverse backgrounds, each
-              bringing unique perspectives and expertise to the table. Led by
-              visionary leaders and industry veterans, we foster a culture of
-              collaboration, creativity, and continuous learning. Every member
-              of our team plays a crucial role in shaping the future of our
-              company and making a positive impact on the world.
-            </p>
+          <div className="flex flex-col items-center">
+            <div className="mb-4">
+              <Image
+                src={OpenTalk}
+                alt="Culture"
+                width={450}
+                height={550}
+                className="rounded-full"
+              />
+            </div>
+            <div className="text-center mb-10">
+              <h2 className="font-bold">Talk Openly:</h2>
+              <p>We talk about problems and ideas openly.</p>
+            </div>
           </div>
-          <h1 className="font-bold text-3xl">Company Culture</h1>
-          <div className="py-5 ">
-            <p>
-              Customer First: We always put our customers' needs first. <br />
-              Teamwork: We work together like a family to get things done.{" "}
-              <br />
-              Training and Growth: We learn new things to do our job better.{" "}
-              <br />
-              Safety Matters: We make sure everyone stays safe at work. <br />
-              Talk Openly: We talk about problems and ideas openly. <br />
-              Say Thanks: We appreciate each other's hard work. <br />
-              Balance Life and Work: We make sure everyone has time for their
-              personal life. <br />
-              Do the Right Thing: We always do what's fair and honest.
-              <br />
-              Helping Our Community: We like to give back to our community.
-              <br />
-              Be Creative: We're always looking for new ways to do things
-              better.
-              <br />
-            </p>
+          <div className="flex flex-col items-center">
+            <div className="mb-4">
+              <Image
+                src={WlifeB}
+                alt="Culture"
+                width={450}
+                height={550}
+                className="rounded-full"
+              />
+            </div>
+            <div className="text-center mb-10">
+              <h2 className="font-bold">
+                Balance Life and Work: <br />
+              </h2>
+              <p> We make sure everyone has time for their personal life.</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="mb-4">
+              <Image
+                src={Safety}
+                alt="Safety"
+                width={450}
+                height={550}
+                className="rounded-full"
+              />
+            </div>
+            <div className="text-center mb-10">
+              <h2 className="font-bold">
+                Safety Matters: <br />
+              </h2>
+              <p> We make sure everyone stays safe at work.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -116,10 +153,10 @@ const HomePage = () => {
         <div className="flex justify-center items-center flex-col gap-10 lg:flex-row">
           <div className="border-8 w-72 h-96 shadow-2xl m-10 flex justify-center flex-col items-center gap-4">
             <div className="text-center font-bold pt-2">
-              <p>Gold Package</p>
+              <p>Economic Package</p>
             </div>
             <div className="w-auto h-auto p-5">
-              <Image src={Service} alt="Package" />
+              <Image src={Service1} alt="Package" />
               <div className="flex justify-center pt-5">
                 <Link
                   href="/login"
@@ -132,10 +169,10 @@ const HomePage = () => {
           </div>
           <div className="border-8 w-72 h-96 shadow-2xl m-10 flex justify-center flex-col items-center gap-4">
             <div className="text-center font-bold pt-2">
-              <p>Gold Package</p>
+              <p>Standar Package</p>
             </div>
             <div className="w-auto h-auto p-5">
-              <Image src={Service} alt="Package" />
+              <Image src={Service2} alt="Package" />
               <div className="flex justify-center pt-5 ">
                 <Link
                   href="/login"
@@ -148,10 +185,10 @@ const HomePage = () => {
           </div>
           <div className="border-8 w-72 h-96 shadow-2xl m-10 flex justify-center flex-col items-center gap-4">
             <div className="text-center font-bold pt-2">
-              <p>Gold Package</p>
+              <p>Premium Package</p>
             </div>
             <div className="w-auto h-auto p-5">
-              <Image src={Service} alt="Package" />
+              <Image src={Service3} alt="Package" />
               <div className="flex justify-center pt-5 ">
                 <Link
                   href="/login"
@@ -173,41 +210,33 @@ const HomePage = () => {
         </div>
       </section>
       <section className="bg-blue-200 text-black">
-        <div className="container mx-auto py-10 px-4">
-          <div className="py-10 text-center">
-            <h1 className="text-4xl font-bold">Testimony</h1>
-            <p className="pt-5 text-4xl italic font-bold">
-              "What is our client said about GAMSKY<sup>Corp"</sup>
-            </p>
-          </div>
-          <div className="flex justify-center items-center flex-col gap-10 lg:flex-row">
-            <div className="border-8 w-auto h-auto shadow-2xl m-10 flex justify-center flex-col items-center gap-4">
-              <div className="text-center font-bold pt-5">
-                <p>Client 1</p>
+        <div className="container mx-auto py-10 px-4 text-center">
+          <h1 className="text-4xl font-bold">Testimony</h1>
+          <p className="pt-5 text-4xl italic font-bold">
+            'What our clients said about GAMSKY<sup>Corp</sup>'
+          </p>
+          <div className="flex justify-center items-center flex-col lg:flex-row gap-10 mt-10">
+            {Testimonials.testimonials.map((testimonial) => (
+              <div
+                key={testimonial.id}
+                className="border-8 w-full lg:w-96 h-auto shadow-2xl p-4 flex flex-col items-center"
+              >
+                <div className="font-bold text-xl pt-4">
+                  <p>{testimonial.name}</p>
+                </div>
+                <div className="w-40 h-40 bg-gray-300 rounded-full overflow-hidden mt-4">
+                  <img
+                    src={testimonial.image}
+                    alt={`Review by ${testimonial.name}`}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="font-bold text-lg mt-4">
+                  <p>Rating</p>
+                  <p className="text-2xl">{testimonial.rating}</p>
+                </div>
               </div>
-              <div className="w-auto h-auto p-5">
-                <Image src={Client} alt="Review 3" />
-              </div>
-              <h2 className="text-2xl pb-5">⭐⭐⭐⭐⭐</h2>
-            </div>
-            <div className="border-8 w-auto h-auto shadow-2xl m-10 flex justify-center flex-col items-center gap-4">
-              <div className="text-center font-bold pt-5">
-                <p>Client 2</p>
-              </div>
-              <div className="w-auto h-auto p-5">
-                <Image src={Client} alt="Review 3" />
-              </div>
-              <h2 className="text-2xl pb-5">⭐⭐⭐⭐⭐</h2>
-            </div>
-            <div className="border-8 w-auto h-auto shadow-2xl m-10 flex justify-center flex-col items-center gap-4">
-              <div className="text-center font-bold pt-5">
-                <p>Client 3</p>
-              </div>
-              <div className="w-auto h-auto p-5">
-                <Image src={Client} alt="Review 3" />
-              </div>
-              <h2 className="text-2xl pb-5">⭐⭐⭐⭐⭐</h2>
-            </div>
+            ))}
           </div>
         </div>
       </section>

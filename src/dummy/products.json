@@ -1,0 +1,43 @@
+{
+  "Services": [
+    {
+      "id": 1,
+      "name": "Paket Hemat",
+      "description": "Paket pindahan ekonomis, cocok untuk pindahan rumah kecil atau apartemen.",
+      "includes": [
+        "Pengangkutan barang",
+        "Packing bahan dasar",
+        "Pengaturan barang di tujuan"
+      ],
+      "price": 1500000,
+      "currency": "IDR",
+      "image": "https://gopindah.com/wp-content/uploads/2022/01/Jasa-Pindahan-Rumah-Terbaik-Di-Jakarta.png"
+    },
+    {
+      "id": 2,
+      "name": "Paket Standar",
+      "description": "Paket pindahan standar, cocok untuk pindahan rumah sedang.",
+      "includes": [
+        "Pengangkutan barang",
+        "Packing lengkap",
+        "Pengaturan ulang barang di tujuan"
+      ],
+      "price": 3000000,
+      "currency": "IDR",
+      "image": "https://www.gajiumr.com/jasa/wp-content/uploads/2023/02/jasa-pindahan-profesional.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Paket Premium",
+      "description": "Paket pindahan premium, cocok untuk pindahan rumah besar atau mewah.",
+      "includes": [
+        "Pengangkutan barang dengan perlindungan khusus",
+        "Packing lengkap dengan bahan premium",
+        "Pengaturan ulang barang dengan desain ruangan"
+      ],
+      "price": 6000000,
+      "currency": "IDR",
+      "image": "https://t3.ftcdn.net/jpg/06/49/56/82/360_F_649568263_OT6NWmTltZTWP2BJkHmZM5ercwS4IOpp.jpg"
+    }
+  ]
+}
